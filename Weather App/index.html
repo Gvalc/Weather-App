@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="weather-container">
+        <h2>Weather App By Garvee Valcourt</h2>
+        <input type="text" id="city" placeholder="Enter city" />
+        <button onclick="getWeather()">Search</button>
+
+        <img id="weather-icon" alt="Weather Icon">
+
+        <div id="temp-div"></div>
+        <div id="weather-info"></div>
+        <div id="forecast"></div>
+
+        <button id="info-button" onclick="showInfo()">Info</button>
+    </div>
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeInfo()">&times;</span>
+            <h3>About the Program</h3>
+            <p>The Product Manager Accelerator Program is designed to support PM professionals through every stage of their career. From students looking for entry-level jobs to Directors looking to take on a leadership role, our program has helped over hundreds of students fulfill their career aspirations.</p>
+            <p>Our Product Manager Accelerator community is ambitious and committed. Through our program, they have learned, honed, and developed new PM and leadership skills, giving them a strong foundation for their future endeavors.</p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
